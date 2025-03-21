@@ -1,5 +1,6 @@
 <%page expression_filter="h"/>
-<%! from django.utils.translation import ugettext as _ %>
+<%! from django.utils.translation import gettext as _ %>
+
 <%inherit file="../main.html" />
 
 <%block name="pagetitle">${_("Contact")}</%block>
@@ -10,7 +11,7 @@
             <%block name="pageheader">${page_header or _("Contact")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">For any question regarding the usage of HKMOOC, please get in touch with <a href="mailto:hkvu@ust.hk">hkvu@ust.hk</a>.</%block>
+            <%block name="pagecontent">For any question regarding the usage of HKMOOC, please get in touch with <a href="mailto:contact@dev.local">contact@dev.local</a>.</%block>
         </p>
     </section>
 </main>
